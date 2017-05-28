@@ -9,7 +9,7 @@ let keyboard = require('./routes/kakao-keyboard')
 let message = require('./routes/kakao-message')
 
 const app = express()
-const port = 3000
+const port = 5000
 
 app.use(morgan('dev'))
 app.use(bodyParser.json())
