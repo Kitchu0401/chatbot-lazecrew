@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
   let message = ''
 
   if ( content === '안녕?' ) {
-    new Promise((onFurfilled, onRejected) => { return '안녕하세요, 반가워요!' })
+    new Promise((onFurfilled, onRejected) => { onFurfilled('안녕하세요, 반가워요!') })
       .then(COMMON_HANDLE_SUCCESS)
       .catch(COMMON_HANDLE_ERROR)
   } else if ( content === '오늘 날씨는 어때?' ) {
